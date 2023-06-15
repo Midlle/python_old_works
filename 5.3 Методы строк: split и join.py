@@ -1,3 +1,11 @@
+# text = input('txt')
+# word_list = text.split()
+# print(word_list)
+#
+# new_txt = '----'.join(word_list)
+#
+# print(new_txt)
+#
 while True:
     grats = input('Введите шаблон поздравления, в шаблоне можно использовать конструкцию {name} и {age}: ')
     if '{name}' in grats and '{age}' in grats:
@@ -18,3 +26,4 @@ people = [
 
 people_str = ', '.join(people)
 print('\n Birthdays ', people_str)
+

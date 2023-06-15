@@ -1,3 +1,13 @@
+# #task 1
+# word_list = [input('Enter the word: ') for _ in range(3)]
+# txt = input('input the text: ')
+# word_count = [txt.count(word) for word in word_list]
+#
+# print(word_count)
+#task 2
+# text = input('Input the text: ')
+# print(' '.join(text.split()))
+#task 3
 while True:
     grats = input('Введите шаблон поздравления, в шаблоне можно использовать конструкцию {name} и {age}: ')
     if '{name}' in grats and '{age}' in grats:
