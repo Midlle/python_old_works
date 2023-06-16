@@ -1,20 +1,12 @@
+current = {}
+
 while True:
-    grats = input('Введите шаблон поздравления, в шаблоне можно использовать конструкцию {name} и {age}: ')
-    if '{name}' in grats and '{age}' in grats:
+    name = input('Name: ')
+    phone = input('Phone number: ')
+    current[name] = phone
+    if name == 'stop' or phone == 'stop':
+        print(f'current phonebook is {current}')
         break
     else:
-        print('Error')
+        print(current)
 
-surname_list = input('ФИ людей: ').split(', ')
-age = input('Возраст каждого человека: ').split(' ')
-ages = [int(i_number) for i_number in age]
-
-for i_man in range(len(surname_list)):
-    print(grats.format(name=surname_list[i_man], age=ages[i_man]))
-
-people = [
-    ' '.join([surname_list[i_man], str(ages[i_man])])
-    for i_man in range(len(surname_list))]
-
-people_str = ', '.join(people)
-print('\n Birthdays ', people_str)
